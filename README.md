@@ -33,9 +33,12 @@ you to restart pi for the LSP to become active.
     "perlnavigator": {
       "name": "PerlNavigator",
       "extensions": [".pl", ".pm", ".t", ".psgi"],
-      "command": "perlnavigator-pi",
+      "command": "perlnavigator",
       "args": ["--stdio"],
       "rootMarkers": ["cpanfile", "Makefile.PL", "dist.ini"],
+      "settings": {
+        "perlnavigator.perlPath": "/home/jan/perl5/perlbrew/perls/perl-5.42.1/bin"
+      },
       "env": {
         "PERL5LIB": ".:local/lib/perl5"
       }
@@ -44,12 +47,12 @@ you to restart pi for the LSP to become active.
 }
 ```
 
-The skill adapts `command` and `PERL5LIB` to your specific project and system.
+The skill adapts `perlPath` and `PERL5LIB` to your specific project and system.
 
 ## Prerequisites
 
-- [PerlNavigator](https://github.com/bscan/PerlNavigator) installed and
-  available as `perlnavigator-pi` in your PATH (pi-lens bundles a wrapper
-  at `~/.pi-lens/bin/perlnavigator-pi`).
+- [PerlNavigator](https://github.com/bscan/PerlNavigator) installed globally:
+  `npm install -g perlnavigator-server`
+- Perl via [perlbrew](https://perlbrew.pl/) (the skill auto-detects the path)
 - [pi-lens](https://github.com/earendil-works/pi-lens) extension active in
-  your pi installation.
+  pi
