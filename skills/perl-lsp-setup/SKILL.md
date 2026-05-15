@@ -1,3 +1,8 @@
+---
+name: perl-lsp-setup
+description: "Configure Perl LSP servers (PerlNavigator + PLS) for the current Perl project via pi-lens."
+---
+
 # perl-lsp-setup
 
 Configure Perl LSP servers for the current Perl project via pi-lens.
