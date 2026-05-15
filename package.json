@@ -1,0 +1,11 @@
+{
+  "name": "pi-lens-perl-config",
+  "version": "1.0.0",
+  "description": "pi-lens LSP setup for Perl projects (PerlNavigator)",
+  "keywords": ["pi-package"],
+  "author": "Jan Limpens",
+  "license": "MIT",
+  "pi": {
+    "skills": ["./skills"]
+  }
+}
